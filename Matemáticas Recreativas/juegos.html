@@ -1,0 +1,132 @@
+<!DOCTYPE html> <!--Tipo de documento-->
+<html lang="es"> <!--Idioma de documento-->
+
+<head> <!--encabezado donde va el titulo y el icono de la pestaña-->
+    <link rel="icon" href="Imagenes/logo.png"> <!--icono de pestaña-->
+    <meta charset="UTF-8"> <!--metacharset para poner tildes-->
+    <title>Matemáticas Recreativas</title> <!--titulo de pestaña-->
+</head>
+
+<div>
+    <header id="cabecera"> <!--codigo de cabecera-->
+        <a href="home.html"><img width="20%" src="imagenes/logo_sin_fondo.png"></a> <!--logo de la pagina-->
+        <link rel="stylesheet" href="Estilos/estiloshtml5.css"> <!--hoja de estilos css-->
+        <script type="text/javascript" src="JS/javascript.js"></script> <!--hoja de estilos javascript-->
+    </header>
+</div>
+
+<div>
+    <nav class="menuCSS3"> <!--id o clase de menucss3-->
+        <ul> <!--inicio de menu-->
+            <li><a href="home.html">Home</a></li> <!--la etiqueta <a> sirve para llamar o linkear una parte con otra-->
+            <li><a href="juegos.html">Juegos</a></li> <!--la etiqueta href="" sirve para decirle a la etiqueta <a> donde abrir las cosas-->
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="galeria.html">Galería</a>
+                <ul> <!--un ul dentro de un li es para hacer un menu desplegable-->
+                    <li><a href="musica.html">Música</a></li>
+                    <li><a href="imagenes.html">Imágenes</a></li>
+                    <li><a href="videos.html">Video</a></li>
+                </ul>
+        </ul>
+    </nav>
+</div>
+
+<body>
+    <div id="agrupar">
+
+        <section id="seccion">
+
+            <article>
+                <figure>
+                    <h1><b>Hora de pensar y jugar</b></h1>
+                    <img width="30%" src="imagenes/pensador.png">
+                </figure>
+                <br>
+                <span id="idea_principal">
+                    <h1>Los calcetines de colores</h1>
+                    <br>
+                    <p id="juego_calcetines">
+                        Hay 10 calcetines rojos y 10 calcetines azules mezclados en el cajón del armario. Los veinte
+                        calcetines son exactamente iguales, salvo por el color. El cuarto está absolutamente a oscuras,
+                        y tu necesitas dos calcetines del mismo color.
+                        <b>¿Cuál es el menor número de calcetines que debes sacar para estar
+                            segura de que tienes un par del mismo color?</b>
+                        <br>
+                        <br>
+                    <h3 id="solve">Solución</h3>
+                    <br>
+                    <p id="juego_calcetines">
+                        Muchas personas al tratar de resolver este acertijo, se dicen a si mismos: "Supongamos que el
+                        primer calcetín que saco es rojo"
+                    </p>
+                    </p>
+                </span>
+                <br>
+                <br>
+                <footer id="sugerencias">
+                    <p>Sugerencias o Comentarios</p>
+                </footer>
+            </article>
+        </section>
+
+        <aside id="columna">
+            <blockquote>Operaciones Matemáticas</blockquote>
+        </aside>
+
+        <aside id="columna2_juegos">
+            <blockquote>Calculadora</blockquote>
+            <blockquote>
+                <form action="">
+                    <div>
+                        <label for="">
+                            Numero 1:
+                        </label>
+                        <input type="number" id="numero1_ingreso" name="numero1_ingreso">
+                    </div>
+                    
+                    <div>
+                        <label for="">Operación</label>
+                        <select id="lista_operaciones">
+                            <option value="">SELECCIONAR</option>
+                            <option value="sumar">Sumar</option>
+                            <option value="restar">Restar</option>
+                            <option value="multiplicar">Multiplicar</option>
+                            <option value="dividir">Dividir</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="">
+                            Numero 2:
+                        </label>
+                        <input type="number" id="numero2_ingreso" name="numero2_ingreso">
+                    </div>
+                    <br>
+                    <div>
+                        <button id="calcular" onclick="calcular_operacion()">Calcular</button>
+                    </div>
+
+                    <div>
+                        <label for="">
+                            Resultado:
+                        </label>
+                        <input type="number" id="resultado1" name="resultado1" disabled>
+                    </div>
+                </form>
+            </blockquote>
+        </aside>
+
+        <aside id="columna3">
+            <blockquote>Mensaje #1</blockquote>
+            <blockquote>Mensaje #2</blockquote>
+        </aside>
+
+        <footer id="pies">
+            Derechos reservados Matematicas Recreativas &copy;2021-2022
+        </footer>
+
+    </div>
+</body>
+
+</html>
